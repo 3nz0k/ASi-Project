@@ -41,8 +41,8 @@ Cette application, développée en **C++**, permet de tester des **distributeurs
 
 1. Cloner le dépôt :
    ```bash
-   git clone https://github.com/3nzok/ASi-Project.git
-   cd ASi-Project
+   git clone https://github.com/3nz0k/BancTestASi.git
+   cd BancTestASi
    ```
 
 2. Compiler le programme avec mingw32
