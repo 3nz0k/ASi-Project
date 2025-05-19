@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IhmPrincipal</class>
+ <widget class="QMainWindow" name="IhmPrincipal">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>503</width>
+    <height>248</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Calibri</family>
+    <pointsize>12</pointsize>
+    <weight>50</weight>
+    <bold>false</bold>
+    <kerning>true</kerning>
+   </font>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="tabletTracking">
+   <bool>false</bool>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>IhmPrincipal</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>481</width>
+      <height>143</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="1">
+      <widget class="QPushButton" name="BoutOuvrirFi">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Ouvrir Fichier Configuration</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="slaveId">
+       <property name="text">
+        <string>Identifier l'esclave</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="BtnLireTag">
+       <property name="text">
+        <string>Lire le tag RFID</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="BtnCtag">
+       <property name="text">
+        <string>Créer un nouveau tag RFID</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>503</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(216, 232, 255);
+image: url(:/UPL-simpl_Mesa-de-trabajo-1.png);
+</string>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu </string>
+    </property>
+    <addaction name="actiontest_manuel"/>
+    <addaction name="actiontest_automatique"/>
+    <addaction name="actionexportez"/>
+    <addaction name="ActionQuitter"/>
+   </widget>
+   <addaction name="menuMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(234, 239, 255);
+</string>
+   </property>
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::AllToolBarAreas</set>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actiontest_manuel"/>
+   <addaction name="actiontest_automatique"/>
+   <addaction name="actionexportez"/>
+   <addaction name="ActionQuitter"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="actiontest_manuel">
+   <property name="icon">
+    <iconset resource="Icones.qrc">
+     <normaloff>:/img/Manuel.png</normaloff>:/img/Manuel.png</iconset>
+   </property>
+   <property name="text">
+    <string>Test manuel</string>
+   </property>
+  </action>
+  <action name="actiontest_automatique">
+   <property name="icon">
+    <iconset resource="Icones.qrc">
+     <normaloff>:/img/Automatique.png</normaloff>:/img/Automatique.png</iconset>
+   </property>
+   <property name="text">
+    <string>Test automatique</string>
+   </property>
+  </action>
+  <action name="actionexportez">
+   <property name="icon">
+    <iconset resource="Icones.qrc">
+     <normaloff>:/img/Exporter.png</normaloff>:/img/Exporter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exportez au format PDF</string>
+   </property>
+  </action>
+  <action name="ActionQuitter">
+   <property name="icon">
+    <iconset resource="Icones.qrc">
+     <normaloff>:/img/Quitter.png</normaloff>:/img/Quitter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Icones.qrc"/>
+ </resources>
+ <connections/>
+</ui>

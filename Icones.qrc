@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/Automatique.png</file>
+        <file>img/Exporter.png</file>
+        <file>img/Manuel.png</file>
+        <file>img/Quitter.png</file>
+        <file>img/UPL.png</file>
+        <file>img/UPL-simpl_Mesa-de-trabajo-1(1).png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Vanne_ASi>
+	<profil>
+			<num>3</num>
+			<ouvrir>
+				<dPos>1000</dPos>
+				<tPos>1100</tPos>
+			</ouvrir>
+			<posInter>1000</posInter>
+	</profil>
+
+	<profil>
+			<num>7</num>
+			<ouvrir>
+				<dPos>0001</dPos>
+				<tPos>NULL</tPos>
+			</ouvrir>
+			<posInter>NULL</posInter>	
+	</profil>
+</Vanne_ASi>
